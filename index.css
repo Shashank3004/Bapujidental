@@ -10,7 +10,7 @@
     background-position: center;
     background-size: cover;
     /* position: fixed; */
-    top: 0;
+    /* top: 0; */
     width: 100%;
     height: auto;
     z-index: 2; /* Ensure the navbar appears above other content while scrolling down*/
@@ -142,7 +142,7 @@ h2.section-title {
 
     .nav-links {
         position: fixed;
-        top: -100%;
+        top: -500%;
         left: 0;
         width: 100%;
         background: rgb(186, 81, 69);
