@@ -142,7 +142,7 @@ h2.section-title {
 
     .nav-links {
         position: fixed;
-        top: -100%;
+        top: -1000%;
         left: 0;
         width: 100%;
         background: rgb(69, 186, 177);
