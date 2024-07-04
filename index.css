@@ -12,11 +12,9 @@
     position: fixed;
     top: 0;
     width: 100%;
-    display: flex; /* Add */
-    justify-content: space-between; /* Add */
-    align-items: center; /* Add */
-    padding: 10px 20px; /* Add */
-    z-index: 1000; /* Ensure the navbar appears above other content while scrolling down */
+    
+    z-index: 1000; /* Ensure the navbar appears above other content while scrolling down*/
+
 }
 .logo {
     width: 90px; /* Adjust width as needed */
@@ -166,15 +164,7 @@ h2.section-title {
         
         font-size: 25px;
     }
-    .header {
-        justify-content: space-between;
-        padding: 10px 20px;
-    }
-
-    .logo {
-        width: 70px; /* Adjust for better fit on small screens */
-        height: 70px; /* Adjust for better fit on small screens */
-    }
+   
 }
 .call-now-btn {
     background-color: #f79809fa; /* Customize the color */
