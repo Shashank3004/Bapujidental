@@ -4,7 +4,7 @@
 }
 
 function hideMenu() {
-    document.getElementById("navLinks").style.top = "-70%";
+    document.getElementById("navLinks").style.top = "-100%";
 }
 
 //preloader//
