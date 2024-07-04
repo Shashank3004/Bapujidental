@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,user-scalable=0">
+    <title>Bapuji Super Specialty Hospital</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <!-- FontsAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script><!--js file-->
+   </head>
+   <body style="background-color: #d9d3d359;">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <img src="logo.png" alt="Loading...">
+        </div>
+    </div>
+    <section class="header" style="font-family: sans-serif;">
+        <nav>
+            <a href="index.html"><img src="logo.png" alt="" class="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul><b>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    
+                    <li><a href="tel:+1234567890" class="call-now-btn">Call Now</a></li>
+                </ul></b>
+                
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+           
+    </section> 
+    <div class="container12"style="padding-top: 80px; background-color: #d9d3d359;font-family: sans-serif;" >
+     
+      <!-- Slideshow container -->
+      <div class="slideshow-container" >
+
+        <div class="mySlides fade">
+          <img src="b.png" alt="">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="img1.png" alt="">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="Top img 2.png" alt="">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮ </a>
+        <a class="next" onclick="plusSlides(1)"> ❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+        
+            
+           
+            
+    </div>
+    <div class="booking" style="background-color: #d9d3d359; display: flex; justify-content: space-between; align-items: center; padding: 30px;">
+        <div class="booking-text" >
+            <h2 style="color: #f4290a;">Welcome to Bapuji Super Speciality Hospital</h2><br>
+            <h4 >You can now book an appointment online without visiting the hospital. Fill out our appointment form in advance to schedule a consultation and avoid waiting in line.</h4>
+        </div><br>
+        <div class="booking-form" style="padding: 30px;">
+            <h2 style="text-align: center; color: #ffffff;">Book an Appointment</h2><br>
+            <form action="#" method="post">
+                <div class="form-row">
+                    <div class="form-group half-width">
+                        <label for="name"><b>Name:</b></label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group half-width">
+                        <label for="age"><b>Age:</b></label>
+                        <input type="number" id="age" name="age" placeholder="Enter your age" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group half-width">
+                        <label for="phone"><b>Phone Number:</b></label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your number" required>
+                    </div>
+                    <div class="form-group half-width">
+                        <label for="date"><b>Date:</b></label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group half-width">
+                        <label for="time"><b>Time:</b></label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+                    <div class="form-group half-width">
+                        <label for="Address"><b>Address:</b></label>
+                        <input type="text" id="Address" name="Address" placeholder="Enter your Address" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="problem"><b>Problem:</b></label>
+                    <textarea id="problem" name="problem" rows="4" placeholder="Describe your problem" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit"><b>Book Now</b></button>
+                </div>
+            </form>
+        </div>
+        
+    </div>
+    
+    
+    
+    <div class="container" style="padding: 15px; background-color: #d9d3d359;font-family: sans-serif;">
+        <h2 class="section-title"><b>About Us<br>_______</b></h2>
+        <br>
+        <div class="doctor-section">
+            <div class="doctor-img">
+                <img src="doctor 1.png" alt="">
+            </div>
+            <div class="doctor-info" style="font-family: sans-serif;">
+                <h3 style="padding-top: 15px; color: #f4290a;">Dr. Balaram Jadav</h3>
+                <p><b>B.D.S., M.D.S</b></p>
+                <h3 style="color: #07369a;">Consultant Orthodonitst & Implantologist <br> <br>
+                   Ex. Senior Lecturer at Mallareddy, Women's Dental College, Hyd. <br> <br> Asst. Professor at Meghana Dental College, Nzb.
+                </h3>
+                
+            </div>
+        </div>
+        
+        
+    </div>
+
+    <!-- Statistics Section -->
+    <section class="statistics" style="font-family: sans-serif;padding-left: 100px;padding-right: 100px;">
+        <div class="stat">
+            <div class="stati">
+                <div class="number" data-target="13">0</div>
+                <div class="statis">+</div>
+            </div>
+            
+            <p>Years</p>
+        </div>
+        <div class="stat">
+            <div class="stati">
+                <div class="number" data-target="21000">0</div>
+                <div class="statis">+</div>
+            </div>
+            
+            <p>Patients</p>
+        </div>
+        <div class="stat">
+            <div class="stati">
+                <div class="number" data-target="100">0</div>
+                <div class="statis">%</div>
+            </div>
+            
+            <p>Results</p>
+        </div>
+        <div class="stat">
+            <div class="stati">
+                <div class="number" data-target="8">0</div>
+                <div class="statis">+</div>
+            </div>
+            
+            <p>Qualified Staff</p>
+        </div>  
+        </div>
+    </section>
+    <div class="container services-section" style="font-family: sans-serif;">
+        <h2 class="section-title">Our Speciality Services<br>______________</h2>
+        <p class="section-description">Excellent dental care with highly qualified and experienced dentists, cutting-edge technology, all-inclusive care, individualised attention, and a patient satisfaction guarantee.</p>
+    
+        <div class="slider">
+            <div class="cards-container">
+                <div class="card">
+                    <img src="Orthodontist.png" alt="Orthodontist">
+                    <h4 class="card-title">Orthodontist</h4>
+                    <p>An orthodontist specializes in diagnosing, preventing, and treating dental and facial irregularities to improve oral health and aesthetics. </p>
+                </div>
+                <div class="card">
+                    <img src="Implantalogist.png" alt="Implantalogist">
+                    <h4 class="card-title">Implantalogist</h4>
+                    <p>An implantologist is a dental specialist focused on placing and managing dental implants to replace missing teeth. </p>
+                </div>
+                <div class="card">
+                    <img src="pedodontist.png" alt="Pedodontist">
+                    <h4 class="card-title">Pedodontist</h4>
+                    <p>A pedodontist, also known as a pediatric dentist, specializes in the dental care of children from infancy through adolescence. </p>
+                </div>
+                <div class="card">
+                    <img src="Maxillofacial.png" alt="Maxillofacial Surgeon">
+                    <h4 class="card-title">Maxillofacial Surgeon</h4>
+                    <p>A maxillofacial surgeon specializes in surgical procedures involving the face, mouth, and jaw. </p>
+                </div>
+                <div class="card">
+                    <img src="Periodontist.png" alt="Periodontist">
+                    <h4 class="card-title">Periodontist</h4>
+                    <p>A periodontist is a dental specialist focusing on the prevention, diagnosis, and treatment of gum disease and other conditions affecting the supporting structures of the teeth. </p>
+                </div>
+                <div class="card">
+                    <img src="Endodontist.png" alt="Endodontist">
+                    <h4 class="card-title">Endodontist</h4>
+                    <p>An endodontist specializes in diagnosing and treating issues related to the dental pulp and root canals. </p>
+                </div>
+                
+            </div>
+        </div>
+    
+    </div>
+    
+    
+ <div class="container machine-section" style="font-family: sans-serif;">
+    <h2 class="section-title">Advanced Machines<br>_________</h2>
+
+
+<div class="row6">
+<div class="column6">
+  <img id="myImg1" src="OPG.png" alt="">
+  <h4>OPG Dental Digital X-Ray Machine</h4>
+  
+</div>
+<div class="column6">
+  <img id="myImg2" src="intra oral welding machine.png" alt="">
+  <h4>Intraoral Welder Machine</h4>
+  
+</div>
+<div class="column6">
+    <img id="myImg2" src="root canal.png" alt="">
+    <h4>Endo-Motor Root Canal Treatment </h4>
+    
+  </div>
+<div class="column6">
+    <img id="myImg2" src="Laser Density.png" alt="">
+    <h4>Laser Dentistry</h4>
+    
+  </div>
+<div class="column6">
+  <img id="myImg3" src="rvg.png" alt="">
+  <h4>RVG(Radiovisiography)</h4>
+  
+</div>
+
+  <div class="column6">
+    <img id="myImg2" src="autoclave.png" alt="">
+    <h4>B-Class Autoclave Fully Automatic, High-End Sterilizer</h4>
+    
+  </div>
+  
+</div>
+
+</div>
+    
+    
+    
+    <!-- Gallery Section -->
+    <div class="container gallery-section" style="font-family: sans-serif;">
+        <h2 class="section-title">Hospital Photos<br>_______</h2>
+        <div class="gallery-container">
+            <div class="gallery-card">
+                <img src="doctor opertion.png" alt="Operation">
+                <h5 class="gallery-title">Operation</h5>
+            </div>
+            <div class="gallery-card">
+                <img src="Operation img.png" alt="Operation Area">
+                <h5 class="gallery-title">Operation Area</h5>
+            </div>
+            
+            <div class="view-more-container">
+                <a href="gallery.html" class="view-more-btn">View More</a>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="background-color: #d9d3d359;">
+        <h2 class="section-title"><b>Contact Us<br>______</b></h2><br><br>
+        <div class="contact-section">
+            <div class="location">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3779.744164136969!2d78.09781487519543!3d18.675472982448387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcddb2fcf034cdf%3A0x3f029eb96534e5b0!2sBapuji%20super%20speciality%20dental%20hospital!5e0!3m2!1sen!2sin!4v1718630548861!5m2!1sen!2sin" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>1st Floor Indur City Scan ,Khaleelwadi, Nizamabad - 503001</h5>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>91+ 8568494964</h5>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>
+                        <h5>balaramdoctor@gmail.com</h5>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h4>Bapuji Super Speciality Hospital</h4>
+                    <p>Our hospital is one of the premier dental hospitals in Nizamabad, offering a wide range of dental services with precision, care, and top-notch quality.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutus.html">About</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                        <li><a href="terms&conditions.html">Terms&Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                         <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                       
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p><b>&copy; Bapuji Super Speciality Hospital. All rights reserved. Developed by Swaru Solutions</b></p>
+            </div>
+        </div>
+    </footer>
+   
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        
+        // Automatically change slides every 5 seconds
+        setInterval(function() {
+          plusSlides(1);
+        }, 5000);
+        </script>   
+</body>
+</html>
+
