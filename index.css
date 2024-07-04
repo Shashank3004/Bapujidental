@@ -137,6 +137,7 @@ h2.section-title {
 
     .nav-links ul li {
         display: block;
+        
     }
 
     .nav-links {
@@ -162,6 +163,15 @@ h2.section-title {
     .nav-links ul {
         
         font-size: 25px;
+    }
+    .header {
+        justify-content: space-between;
+        
+    }
+
+    .logo {
+        width: 70px; /* Adjust for better fit on small screens */
+        height: 65px; /* Adjust for better fit on small screens */
     }
 }
 .call-now-btn {
