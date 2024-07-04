@@ -166,12 +166,12 @@ h2.section-title {
     }
     .header {
         justify-content: space-between;
-        
+        padding: 10px 20px;
     }
 
     .logo {
         width: 70px; /* Adjust for better fit on small screens */
-        height: 65px; /* Adjust for better fit on small screens */
+        height: 70px; /* Adjust for better fit on small screens */
     }
 }
 .call-now-btn {
