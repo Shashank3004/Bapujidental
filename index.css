@@ -387,7 +387,7 @@ h2.section-title {
     }
 
     .half-width {
-        flex: 0 0 48%;
+        flex: 0 0 40%;
         margin-bottom: 15px;
     }
 }
