@@ -12,7 +12,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    height: auto;
+    height: 200px;
     z-index: 10; /* Ensure the navbar appears above other content while scrolling down*/
 
 }
