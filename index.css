@@ -12,9 +12,11 @@
     position: fixed;
     top: 0;
     width: 100%;
-    
-    z-index: 1000; /* Ensure the navbar appears above other content while scrolling down*/
-
+    display: flex; /* Add */
+    justify-content: space-between; /* Add */
+    align-items: center; /* Add */
+    padding: 10px 20px; /* Add */
+    z-index: 1000; /* Ensure the navbar appears above other content while scrolling down */
 }
 .logo {
     width: 90px; /* Adjust width as needed */
