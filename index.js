@@ -3,9 +3,9 @@
     document.getElementById("navLinks").style.top = "0";
 }
 
-// function hideMenu() {
-//     document.getElementById("navLinks").style.top = "-100%";
-// }
+function hideMenu() {
+    document.getElementById("navLinks").style.top = "-100%";
+}
 
 //preloader//
 window.addEventListener('load', function() {
