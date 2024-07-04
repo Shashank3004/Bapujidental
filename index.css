@@ -5,7 +5,7 @@
     font-family: sans-serif;
 }
 
-.header {
+/* .header {
     background-color: rgb(69, 186, 177);
     background-position: center;
     background-size: cover;
@@ -15,7 +15,7 @@
     height: auto;
     z-index: 10; /* Ensure the navbar appears above other content while scrolling down*/
 
-}
+} */
 .logo {
     width: 90px; /* Adjust width as needed */
     height: 65px; /* Maintains aspect ratio */
