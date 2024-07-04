@@ -5,17 +5,17 @@
     font-family: sans-serif;
 }
 
-/* .header {
+.header {
     background-color: rgb(69, 186, 177);
     background-position: center;
     background-size: cover;
     /* position: fixed; */
-    /* top: 0;
+    top: 0;
     width: 100%;
     height: auto;
-    z-index: 10; /* Ensure the navbar appears above other content while scrolling down*/
+    z-index: 2; /* Ensure the navbar appears above other content while scrolling down*/
 
-/* } / */ */
+}
 .logo {
     width: 90px; /* Adjust width as needed */
     height: 65px; /* Maintains aspect ratio */
@@ -142,10 +142,10 @@ h2.section-title {
 
     .nav-links {
         position: fixed;
-        top: -1000%;
+        top: -100%;
         left: 0;
         width: 100%;
-        background: rgb(186, 69, 69);
+        background: rgb(186, 81, 69);
         height: 100vh;
         text-align: center;
         z-index: 1000;
