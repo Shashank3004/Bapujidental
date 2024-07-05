@@ -12,7 +12,7 @@ window.addEventListener('load', function() {
     setTimeout(function() {
         const preloader = document.getElementById('preloader');
         preloader.style.display = 'none';
-    }, 1000); // Delay in milliseconds (1000ms = 1 seconds)
+    }, 500); // Delay in milliseconds (500ms = 0.5 seconds)
 });
     
 // JavaScript for animated numbers
