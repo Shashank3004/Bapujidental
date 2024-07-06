@@ -1009,7 +1009,7 @@ h2.ab, h6.bc {
   }
   footer {
     position: relative;
-    color: #d20505;
+    color: #1346ee;
     padding: 40px 0;
     font-family: sans-serif;
     overflow: hidden; /* Ensure content doesn't overflow */
@@ -1129,7 +1129,7 @@ footer .content {
 .footer-bottom p {
     margin: 0;
     font-size: 14px;
-    color: #181818;
+    color: #f3f3f3;
     font-family: sans-serif;
 }
 
