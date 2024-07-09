@@ -83,46 +83,57 @@
         </div><br>
         <div class="booking-form" style="padding: 30px;">
             <h2 style="text-align: center; color: #ffffff;">Book an Appointment</h2><br>
-            <form action="#" method="post">
-                <div class="form-row">
-                    <div class="form-group half-width">
-                        <label for="name"><b>Name:</b></label>
-                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
-                    </div>
-                    <div class="form-group half-width">
-                        <label for="age"><b>Age:</b></label>
-                        <input type="number" id="age" name="age" placeholder="Enter your age" required>
+            <form id="myForm" action="https://script.google.com/macros/s/AKfycbxGQ03n7ZjvB-VJchOO-FBsDr7-Cbne4bWCu1NAB775IAps19R1QQqI45t9vUcJRn72YQ/exec" method="post">
+                        <div class="form-row">
+                            <div class="form-group half-width">
+                                <label for="name"><b>Name:</b></label>
+                                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group half-width">
+                                <label for="age"><b>Age:</b></label>
+                                <input type="number" id="age" name="age" placeholder="Enter your age" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group half-width">
+                                <label for="phone"><b>Mobile:</b></label>
+                                <input type="tel" id="phone" name="phone" placeholder="Enter your number" required>
+                            </div>
+                            <div class="form-group half-width">
+                                <label for="date"><b>Date:</b></label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group half-width">
+                                <label for="time"><b>Time:</b></label>
+                                <input type="time" id="time" name="time" required>
+                            </div>
+                            <div class="form-group half-width">
+                                <label for="address"><b>Address:</b></label>
+                                <input type="text" id="address" name="address" placeholder="Enter your Address" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="problem"><b>Problem:(Optional)</b></label>
+                            <textarea id="problem" name="problem" rows="4" placeholder="Describe your problem"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit"><b>Book Now</b></button>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Custom alert box -->
+                <div class="overlay" id="overlay">
+                    <div class="alert">
+                        <h2><strong>Thank You!</strong></h2>
+                        <h6>Your information has been successfully submitted.</h6>
+                        <h6>Our team will contact you soon.</h6><br>
+                        <button class="btn-ok" onclick="hideAlert()">Ok</button>
                     </div>
                 </div>
-                <div class="form-row">
-                    <div class="form-group half-width">
-                        <label for="phone"><b>Mobile:</b></label>
-                        <input type="tel" id="phone" name="phone" placeholder="Enter your number" required>
-                    </div>
-                    <div class="form-group half-width">
-                        <label for="date"><b>Date:</b></label>
-                        <input type="date" id="date" name="date" required>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group half-width">
-                        <label for="time"><b>Time:</b></label>
-                        <input type="time" id="time" name="time" required>
-                    </div>
-                    <div class="form-group half-width">
-                        <label for="Address"><b>Address:</b></label>
-                        <input type="text" id="Address" name="Address" placeholder="Enter your Address" required>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="problem"><b>Problem:</b></label>
-                    <textarea id="problem" name="problem" rows="4" placeholder="Describe your problem" required></textarea>
-                </div>
-                <div class="form-group">
-                    <button type="submit"><b>Book Now</b></button>
-                </div>
-            </form>
-        </div>
+                
         
     </div>
     
@@ -440,6 +451,40 @@
         setInterval(function() {
           plusSlides(1);
         }, 5000);
+        </script> 
+        
+        <script>
+            document.getElementById('myForm').addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent the default form submission
+        
+                var formData = new FormData(this); // Create a FormData object from the form
+                var url = this.getAttribute('action'); // Get the form's action attribute
+        
+                fetch(url, {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => {
+                    if (response.ok) {
+                        // Display the custom alert box
+                        document.getElementById('overlay').style.display = 'flex';
+        
+                        // Reset the form after successful submission
+                        document.getElementById('myForm').reset();
+                    } else {
+                        throw new Error('Form submission failed. Status: ' + response.status);
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error.message);
+                    alert('An error occurred. Please try again later.');
+                });
+            });
+        
+            // Function to hide the custom alert box
+            function hideAlert() {
+                document.getElementById('overlay').style.display = 'none';
+            }
         </script>   
 </body>
 </html>
