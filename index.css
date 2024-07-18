@@ -1393,3 +1393,31 @@ li {
 .btn-ok:hover {
     background-color: #45a049;
 }
+  /*reviews*/
+/* General styles */
+.video-section, .photo-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.video-text, .photo-text {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+
+
+/* Responsive styles for small screens */
+@media only screen and (max-width: 768px) {
+    .video-text, .photo-text {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .gallery-section {
+        padding: 10px;
+    }
+
+    
+}
